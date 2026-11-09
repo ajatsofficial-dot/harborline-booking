@@ -1,0 +1,25 @@
+{
+  "name": "harborline-booking",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Online booking system for a dental clinic: public site, real-time availability, and an admin dashboard.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "db:setup": "node scripts/setup-db.mjs",
+    "db:reset": "node scripts/setup-db.mjs --reset",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@libsql/client": "0.18.0",
+    "next": "14.2.35",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "zod": "3.25.76"
+  },
+  "engines": {
+    "node": ">=18.18"
+  }
+}
